@@ -6,8 +6,8 @@
 - Sheja Gini (300222140)
 - Josh Gnanapragasam
 - Jad Kreit (300363410)
-- Jonathan Tang
+- Jonathan Tang (300359949)
 
 ### Brief Description:
 
-Welcome to the 
+Welcome to **SubHub**! An innovative app that makes subletting and finding open leases as easy as a single tap.
