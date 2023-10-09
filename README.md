@@ -4,7 +4,7 @@
 - Nuha Aburamadan (300361886)
 - Ibrahim Camara (300354920)
 - Sheja Gini (300222140)
-- Josh Gnanapragasam
+- Josh Gnanapragasam (300356175)
 - Jad Kreit (300363410)
 - Jonathan Tang (300359949)
 
