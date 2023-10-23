@@ -1,0 +1,49 @@
+p {
+    font-size: 80x;
+}
+
+/* Code for the logo */
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+#logo-image {
+    width: 450px;
+    height: 200px;
+}
+
+/* Code for the list of pages below logo */
+
+/* Makes the containing div elements display as flex, and then centering them */
+#page-links {
+    display: flex;
+    justify-content: center;
+}
+
+/* Ensures that the entire list doesn't show any period symbols, and displays as flex */
+.page-items {
+    display: flex;
+    list-style: none;
+}
+
+/* Gives each list item a a margin of 10 to the right to sperate them */
+li {
+    margin: 0 10px;
+}
+
+/* Edits the text style of each list item */
+.link-items {
+    color: rgb(45, 45, 165);
+    font-size: 40px;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 30px;
+    transition: color 0.7s;
+}
+
+.link-items:hover {
+    color: #436436;
+}
