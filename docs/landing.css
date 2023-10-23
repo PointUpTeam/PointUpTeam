@@ -1,0 +1,17 @@
+#main-text {
+    font-size: medium;
+}
+
+#logo-container {
+    padding-bottom: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+
+#logo-image {
+    width: 250px;
+    height: 200px;
+}
