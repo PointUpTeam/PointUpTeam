@@ -1,0 +1,26 @@
+/* About Us Page! */
+
+.members-list {
+    display: block;
+}
+
+.team-member {
+    padding: 0% 0% 10% 10%;
+}
+
+.team-member .member-photo {
+    float: left;
+    width: 20%;
+}
+
+.team-member .member-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member .member-writeup {
+    float: right;
+    width: 80%;
+}
+
