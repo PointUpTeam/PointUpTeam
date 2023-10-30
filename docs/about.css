@@ -1,11 +1,40 @@
+/* Navigation Section! */
+
+nav {
+    background-color: #3DC0C1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D3F9B5;
+}
+
+
 /* About Us Page! */
+
+body {
+    font-family: "Roboto Slab";
+}
 
 .members-list {
     display: block;
 }
 
 .team-member {
-    padding: 0% 0% 5% 10%;
+    padding: 1% 0% 0% 10%;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 5px 10px red;
 }
 
 .team-member .member-photo {
