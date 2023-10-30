@@ -1,0 +1,46 @@
+﻿Page 
+Overall Look And Feel
+* Simplistic, minimalistic and modern
+* User-friendly, easy to navigate and understand the UI
+* Will use 3D loading symbols, otherwise will be avoided for links/buttons.
+* Maintaining an overall flat shape design 
+
+
+Basic Formatting
+* Presented on the formatting slideshow from deliverable 2
+
+
+Colours
+We want a very earthy and green colour feel to help present a more friendly tone, making users feel more welcome to the platform. 
+Colour hexes: 
+* #D3F9B5
+* #436436
+* #BF6900
+* #3D0C11
+* #3D0311
+* #000000
+* #24361d
+
+
+Iconography
+For the iconography and any art-related implementations to our website. We will be using copyright-free images and icons (feel free to add your own edits) found online. A few possible sources:
+* The Noun Project
+* Pixabay
+* Google Fonts (Contains Free Symbols And Icons)
+
+Fonts/Typography
+We will be using Google Fonts for this aspect of the website
+* Be consistent with the use of one particular font to keep the simplistic vibe:
+   * We will be using Roboto Slab
+      * Please go to Google Fonts for instructions on adding fonts. 
+
+
+Links
+Any links included will be bolded in one of our colours
+* Once you hover over it, it will change to another colour. [This is used to ensure the user that the link is clickable. (from #24361d   to #3D0C11  )]
+
+
+Buttons
+We will use simple rectangles with curved edges or 3D-looking rectangles as buttons.
+* Once the button is showcased, it will be in the colour hex #436436. 
+   * When the user hovers over the button it will be in a slightly darker shade. Then once the button is pressed it will become a much darker shade. (Include color hex and be consistent)
