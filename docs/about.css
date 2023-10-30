@@ -1,0 +1,67 @@
+/* Navigation Section! */
+
+nav {
+    background-color: #3D0C11;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D3F9B5;
+}
+
+
+/* About Us Page! */
+
+body {
+    font-family: "Roboto Slab";
+    background-color: #FFCB77;
+}
+
+.members-list {
+    display: block;
+}
+
+.team-member {
+    padding: 0.5% 0% 0% 10%;
+    background-color: #93bff5;
+    border: 3px solid #4c86cd;
+    border-radius: 10px;
+    box-shadow: 0px 0px #19535F;
+    transition: box-shadow 0.5s;
+}
+
+.team-member:hover {
+    box-shadow: 5px 10px #19535F;
+}
+
+.team-member .member-photo {
+    float: left;
+    width: 20%;
+}
+
+.team-member .member-photo img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member .member-writeup {
+    float: right;
+    width: 80%;
+}
+
+
+/* Essentially tells the computer that for the next div element, clear the floats that were set on the page both sides */
+.cleanout {
+    clear: both;
+}
