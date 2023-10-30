@@ -39,7 +39,7 @@ li {
 .link-items {
     color: rgb(45, 45, 165);
     font-size: 40px;
-    font-family: "Trebuchet MS", sans-serif;
+    font-family: "Roboto Slab";
     padding: 30px;
     transition: color 0.7s;
 }

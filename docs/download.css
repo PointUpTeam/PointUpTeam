@@ -1,0 +1,26 @@
+body{
+    background-color: #D3F9B5;
+    color: #436436;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;    
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+nav {
+    background-color: #3DC0C1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
