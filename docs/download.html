@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="download.css" rel="stylesheet" type="text/css"/>
+    <script src="download.js"></script>
     <title>SubHub</title>
 
 </head>
@@ -13,24 +14,37 @@
     <!--TOp navigation bar here ?  or insinde the div container -->
 
     <nav>
-        <a href="index.html">
+        <a id="homeBtn" href="index.html">
             <img src="images/logo.png" alt="SubHub Logo" height="25px">
         </a>
         <a href="features.html">Features</a>
-        <a href="download.html">Download</a>
+        <!--<a href="download.html">Download</a> -->
         <a href="about.html">About Us</a>
         <a href="support.html">Support</a>
+
+        <button id="downloadBtn"> Download </button>
+        <button id="Login">Login </button>
+
+        
     </nav>
 
-    <div class="container">
-        <h1>Supported platforms</h1>
-        <p>Discover simplicity, security, and the perfect sublet with our feature-rich platform.</p>
-        <p>[supported Devices]</p>
-        <p>[version number]</p>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="popup-close">
+                <span &times;> X </span>
+            </div>  
+            <h1>SubHhub</h1>
+            <p id="text">Discover simplicity, security, and the perfect sublet with our feature-rich platform.</p>
+            <p id="text">Click here to download SubHub</p>
 
-        <img id="apple" src="images/appstore_download.png" alt="Available on AppStore">
-        <img id="playstore" src="images/googleplay_download.png" alt="Available on Google PLay Store">
-            
+    
+    
+            <img id="apple" src="images/appstore_download.png" alt="Available on AppStore">
+            <img id="playstore" src="images/googleplay_download.png" alt="Available on Google PLay Store">
+                
+            </div>
+
+        
         </div>
     </div>
 

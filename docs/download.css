@@ -1,6 +1,52 @@
+button{
+    background-color: #FFCB77;
+    border-style: solid;
+    border-color: #FFCB77;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);    
+}
+
+
+.popup {
+    
+    position: fixed;
+    z-index: 1;
+}
+
+.popup-content{
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.popup-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+
+
+
+
+
+/* below is the css for the download page as a whole, above is the css for the  popup */
 body{
-    background-color: #D3F9B5;
-    color: #436436;
+    background-color: #19535F;
+    color: #93bff5;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;    
