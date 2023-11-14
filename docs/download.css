@@ -10,10 +10,25 @@ button{
 }
 
 
+button:hover {
+    background-color: #ffb338;
+    border-color: #ffb338;
+    font-weight: bolder;
+}
+
+
 .popup {
     display: none;
     position: fixed;
     z-index: 1;
+    background-color: #19535F;
+    color: #93bff5;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;    
+    margin: 0;
+    padding: 0;
+
 }
 
 .popup-content{
@@ -53,6 +68,11 @@ nav {
     background-color: #3DC0C1;
     padding: 10px 0;
     text-align: center;
+}
+
+
+.navTitle:hover{
+    text-decoration: underline;
 }
 
 nav a {
