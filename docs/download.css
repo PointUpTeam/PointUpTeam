@@ -21,40 +21,77 @@ button:hover {
     display: none;
     position: fixed;
     z-index: 1;
+    margin: 0;
+    padding: 0;
+   
+
+}
+
+/* code for text content and modal box overall */
+
+.popup-content{
+    /* immma sitll need to tweak around these first fews settings so it looks right even when changing window saize and aspect ratio 
+    might use another flex stupid shit */
+   
+    margin:  12.5% auto ;
+    padding: 20px;
+    border: 1px solid #19535F;
+    width: auto; 
+    height: auto ;
+
+
+    border-style: solid;
+    border-radius: 10px;
     background-color: #19535F;
     color: #93bff5;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;    
-    margin: 0;
-    padding: 0;
-
+    
 }
 
-.popup-content{
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+/* code for images */
+
+.popup-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
 }
+
+.popup-images-column{
+    flex: 50% ;
+    padding: 5px;
+}
+
+
+.popup-images-rows{
+    display: flex;
+}
+
+/* code for close button */
 
 .popup-close {
-    color: #aaa;
+    color: #c6c2c2 ; 
     float: right;
     font-size: 28px;
     font-weight: bold;
 
 }
 
+.popup-close:hover{
+    color: #8e8b8b ;
+}
 
 
 
 
+/* below is the css for the download page as a whole, wich means the nav bar and the body.
+ Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
 
-/* below is the css for the download page as a whole, above is the css for the  popup */
-body{
+body{ 
+    
     background-color: #19535F;
     color: #93bff5;
+    
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;    
@@ -73,6 +110,7 @@ nav {
 
 .navTitle:hover{
     text-decoration: underline;
+    font-weight: bolder;
 }
 
 nav a {
