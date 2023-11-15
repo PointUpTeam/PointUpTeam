@@ -1,0 +1,129 @@
+button{
+    background-color: #FFCB77;
+    border-style: solid;
+    border-color: #FFCB77;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+
+button:hover {
+    background-color: #ffb338;
+    border-color: #ffb338;
+    font-weight: bolder;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    
+    
+}
+
+/* code for text content and modal box overall */
+
+.popup-content{
+    /* immma sitll need to tweak around these first fews settings so it looks right even when changing window saize and aspect ratio 
+    might use another flex */
+   
+    margin:  12.5% auto ;
+    padding: 20px;
+    border: 5px solid black;
+    width: 60%; 
+    height: auto ;
+
+
+    border-style: solid;
+    border-radius: 10px;
+    background-color: black;
+    color: #93bff5;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;    
+    
+}
+
+/* code for images */
+
+.popup-image:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.37);
+}
+
+.popup-images-column{
+    flex: 50% ;
+    padding: 5px;
+}
+
+
+.popup-images-rows{
+    display: flex;
+}
+
+/* code for close button */
+
+.popup-close {
+    color: #c6c2c2 ; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.popup-close:hover{
+    color: #8e8b8b ;
+}
+
+
+
+
+/* below is the css for the download page as a whole, wich means the nav bar and the body.
+ Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
+
+body{ 
+    /*
+    background-color: #19535F;
+    color: #93bff5;
+    */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;    
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+nav {
+    background-color: #3DC0C1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.navTitle:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
