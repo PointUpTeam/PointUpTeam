@@ -1,3 +1,24 @@
+/* Navigation Section! */
+
+nav {
+    background-color: #3D0C11;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D3F9B5;
+}
+
 button{
     background-color: #FFCB77;
     border-style: solid;
@@ -85,45 +106,4 @@ button:hover {
 
 .popup-close:hover{
     color: #8e8b8b ;
-}
-
-
-
-
-/* below is the css for the download page as a whole, wich means the nav bar and the body.
- Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
-
-body{ 
-    /*
-    background-color: #19535F;
-    color: #93bff5;
-    */
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;    
-    margin: 0;
-    padding: 0;
-
-    
-}
-
-nav {
-    background-color: #3DC0C1;
-    padding: 10px 0;
-    text-align: center;
-}
-
-
-.navTitle:hover{
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-nav a {
-    color: #FFFFFF;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
 }

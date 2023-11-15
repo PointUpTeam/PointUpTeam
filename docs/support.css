@@ -1,18 +1,1 @@
-nav {
-    background-color: #3DC0C1;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #FFFFFF;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #D3F9B5;
-}
+/* Code Here */
