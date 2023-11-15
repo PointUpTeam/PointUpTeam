@@ -20,29 +20,35 @@ button:hover {
 .popup {
     display: none;
     position: fixed;
+    top: 0%;
+    left: 0%;
     z-index: 1;
     margin: 0;
     padding: 0;
-   
-
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    
+    
 }
 
 /* code for text content and modal box overall */
 
 .popup-content{
     /* immma sitll need to tweak around these first fews settings so it looks right even when changing window saize and aspect ratio 
-    might use another flex stupid shit */
+    might use another flex */
    
     margin:  12.5% auto ;
     padding: 20px;
-    border: 1px solid #19535F;
-    width: auto; 
+    border: 5px solid black;
+    width: 60%; 
     height: auto ;
 
 
     border-style: solid;
     border-radius: 10px;
-    background-color: #19535F;
+    background-color: black;
     color: #93bff5;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -88,10 +94,10 @@ button:hover {
  Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
 
 body{ 
-    
+    /*
     background-color: #19535F;
     color: #93bff5;
-    
+    */
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;    
