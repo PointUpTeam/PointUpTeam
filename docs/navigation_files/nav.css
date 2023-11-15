@@ -1,7 +1,6 @@
 /* Navigation Section! */
 
 nav {
-    background-color: #3D0C11;
     padding: 10px 0;
     text-align: center;
 }
@@ -51,7 +50,6 @@ button:hover {
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     
-    
 }
 
 /* code for text content and modal box overall */
@@ -69,7 +67,7 @@ button:hover {
 
     border-style: solid;
     border-radius: 10px;
-    background-color: black;
+    background-color: #19535F;
     color: #93bff5;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
