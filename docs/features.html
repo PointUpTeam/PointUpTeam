@@ -7,14 +7,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubHub</title>
 
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #436436;
+            background-color: #D3F9B5;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #3DC0C1;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #D3F9B5;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #BF6900;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .feature {
+            flex: 1;
+            min-width: 250px;
+            /* Adjusted minimum width */
+            background-color: #FFFFFF;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            color: #3DC0C1;
+            margin-top: 0;
+            font-size: 1.3em;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        .modal-content {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .closeBtn {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script src="features.js"></script>
+                
 </head>
 
 <body>
+
+
+    <nav>
+        <a href="index.html">
+            <img src="images/logo.png" alt="SubHub Logo" height="25px">
+        </a>
+        <a href="features.html">Features</a>
+        <a href="download.html">Download</a>
+        <a href="about.html">About Us</a>
+        <a href="support.html">Support</a>
+    </nav>
+
+
+
+
     <!-- This div acts as the main container for our webpage content. Adding a class here will allow us to apply global styles and layout adjustments. -->
     <div class="container">
-        <h1>Welcome to SubHub!</h1>
-        <p>Discover simplicity, security, and the perfect sublet with our feature-rich platform.</p>
-
+        <h1>Unlock Subletting Success with SubHub</h1>
+        <p>Empower your subletting experience with our innovative and user-friendly features.</p>
         <!-- Features Section: This container holds all the individual feature blocks, allowing for consistent layout and styling across all features. -->
         <div class="features">
 
@@ -64,9 +188,17 @@
                 <p>Robust verification and security measures for a safer community.</p>
             </div>
 
-            <div class="feature">
+            <div class="feature" id="featureDiv">
                 <h3>Unlock Exclusive Savings</h3>
                 <p>Access special deals and promotions, tailored just for you!</p>
+            </div>
+
+            <!-- For the Easter egg Pop up -->
+            <div class="modal" id="myModal">
+                <div class="modal-content">
+                    <span class="closeBtn" id="closeModalBtn">&times;</span>
+                    <p>You have Received a 10% Discount on our services :) </p>
+                </div>
             </div>
 
             <div class="feature">
