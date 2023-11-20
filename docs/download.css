@@ -97,6 +97,19 @@ button:hover {
 }
 
 
+
+
+#logo-popup{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 4em;
+    width: auto;
+}
+
+
 /* code for close button */
 
 .popup-close {
