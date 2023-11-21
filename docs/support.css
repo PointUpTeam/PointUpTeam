@@ -1,1 +1,13 @@
-/* Code Here */
+/* About Us Page! */
+
+body {
+    line-height: 1.6;
+    font-family: "Roboto Slab";
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 10px 0px 0px 10px;
+}
+
