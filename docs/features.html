@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubHub</title>
 
-    <!-- Style code for page -->
-
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #436436;
-            background-color: #D3F9B5;
+            background-color: #3DC0C1;
             margin: 0;
             padding: 0;
-            text-align: center;
+            text-align: left;
         }
 
         .container {
@@ -26,9 +24,9 @@
         }
 
         h1 {
-            color: #BF6900;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            color: #FFFFFF;
+            font-size: 3.0em;
+            margin-bottom: 0px;
         }
 
         p {
@@ -39,13 +37,13 @@
         .features {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 10px;
             justify-content: center;
         }
 
         .feature {
             flex: 1;
-            min-width: 250px;
+            min-width: 1000px;
             /* Adjusted minimum width */
             background-color: #FFFFFF;
             padding: 15px;
@@ -62,7 +60,7 @@
         h3 {
             color: #3DC0C1;
             margin-top: 0;
-            font-size: 1.3em;
+            font-size: 1.5em;
         }
 
         .modal {
@@ -97,15 +95,21 @@
         }
     </style>
 
-    <!-- Style file for nav bar -->
+    <!-- Style files for nav bar and footer -->
     <link href="./navigation_files/nav.css" rel="stylesheet" type="text/css"/>
+    <link href="./footer_files/footerog.css" rel="stylesheet" type="text/css"/>
 
+    <!-- Script files for nav bar and page -->
     <script src="./navigation_files/nav.js"></script>
-    <script src="nav.js"></script>
-                
+    <script src="features.js"></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
 </head>
 
 <body>
+
 
     <!-- Navigation Bar -->
 
@@ -163,65 +167,22 @@
         
     </nav>
 
-
-
-
     <!-- This div acts as the main container for our webpage content. Adding a class here will allow us to apply global styles and layout adjustments. -->
     <div class="container">
-        <h1>Unlock Subletting Success with SubHub</h1>
+        <h1>Unlock Subletting Success With SubHub</h1>
         <p>Empower your subletting experience with our innovative and user-friendly features.</p>
         <!-- Features Section: This container holds all the individual feature blocks, allowing for consistent layout and styling across all features. -->
         <div class="features">
 
             <!-- Individual Feature Block: Each 'feature' class represents a single feature of the platform, making it easy to apply consistent styling to each feature description. -->
             <div class="feature">
-                <h3>Swift & Seamless Sign-Up</h3>
-                <p>Dive right in with our quick, user-friendly registration process.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Effortless Listing Creation</h3>
-                <p>Transform your space into earnings with just a few clicks!</p>
+                <h3>Security & Privacy</h3>
+                <p>Your data is secured with end-to-end encryption across everything you send. Not even we can access this data. SubHub collects essential user data only and users are able to see what information they are sharing and opt-out freely</p>
             </div>
 
             <div class="feature">
                 <h3>Precision Search</h3>
-                <p>Discover the perfect sublet with our powerful search and custom filters.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Map Your Choices</h3>
-                <p>Explore options in your desired area with an interactive map view.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Safe, Speedy Transactions</h3>
-                <p>Enjoy peace of mind with secure bookings and instant digital agreements.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Connect Instantly</h3>
-                <p>Direct, in-app messaging to streamline communication.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Trust Built on Reviews</h3>
-                <p>Make informed decisions with real testimonials and ratings.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Round-the-Clock Support</h3>
-                <p>We’re always here, ensuring your experience is smooth and hassle-free.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Security You Can Trust</h3>
-                <p>Robust verification and security measures for a safer community.</p>
-            </div>
-
-            <div class="feature" id="featureDiv">
-                <h3>Unlock Exclusive Savings</h3>
-                <p>Access special deals and promotions, tailored just for you!</p>
+                <p>Discover the perfect place to live with our powerful AI assisted search algorithms and custom filters</p>
             </div>
 
             <!-- For the Easter egg Pop up -->
@@ -233,26 +194,68 @@
             </div>
 
             <div class="feature">
-                <h3>A Breeze to Use</h3>
-                <p>Navigate with ease thanks to our intuitive, responsive design.</p>
+                <h3>In-App Messaging</h3>
+                <p>Get in touch with users all around the world using our messaging feature built right into the app</p>
             </div>
 
             <div class="feature">
-                <h3>Transparent, No-Nonsense Policies</h3>
-                <p>Clear terms and worry-free renting, every time.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Admin Power at Your Fingertips</h3>
-                <p>Manage listings, transactions, and user interactions with ease.</p>
-            </div>
-
-            <div class="feature">
-                <h3>Optimize with Insights</h3>
-                <p>Elevate your earnings and user experience with valuable analytics.</p>
+                <h3>Easy Leasing</h3>
+                <p>SubHub makes leasing property simple, quick and worry-free</p>
             </div>
         </div>
     </div>
+
+
+        <!-- Footer section! -->
+
+        <footer>
+            <div class="footer-container">
+    
+                <div class="footer">
+                    <nav role="navigation" aria-label="About us navigation">
+                        <div class="footer-heading">
+                            <h2>About Us</h2>
+                            <a href="#">Customers</a>
+                            <a href="#">Investors</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                    </nav>
+                    <nav role="navigation" aria-label="Contact us navigation">
+                        <div class="footer-heading">
+                            <h2>Contact Us</h2>
+                            <a href="#">Jobs</a>
+                            <a href="#">Support</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </nav>
+                    <nav role="navigation" aria-label="Follow us navigation">
+                        <div class="footer-heading">
+                            <h2>Follow Us</h2>
+                            <div class="social-links-container">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                    </nav>
+                    <div class="footer-email-form">
+                        <h2>Join our newsletter</h2>
+                        <input type="email" placeholder="Enter your email address" id="footer-email">
+                        <input type="submit" value="Sign up" id="footer-email-btn">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="copyright-claim">
+                    <p>&copy; 2023 SubHub, Inc. All rights reserved.&emsp;&emsp;Privacy&emsp;&emsp;Terms&emsp;&emsp;   </p>
+                </div>
+            </div>
+        </footer>
+
+
+
 </body>
 
 </html>
