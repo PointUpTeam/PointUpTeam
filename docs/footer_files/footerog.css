@@ -1,6 +1,6 @@
 .footer-container {
     background-color: #19535F;
-    padding: 4rem;
+    padding: 1rem;
     display: flex; 
     flex-direction: row; /* Changed from column to row */
     align-items: start;  /* Changed from center to start */
