@@ -1,3 +1,23 @@
+/* Navigation Section! */
+
+nav {
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #D3F9B5;
+}
+
 button{
     background-color: #FFCB77;
     border-style: solid;
@@ -40,15 +60,15 @@ button:hover {
    
     margin:  12.5% auto ;
     padding: 20px;
-    border: 5px solid green;
+    border: 5px solid #3D0C11;
     width: 70%; 
     height: auto ;
 
 
     border-style: solid;
     border-radius: 10px;
-    background-color: #19535F;
-    color: #93bff5;
+    background-color: #32a3ba;
+    color: black;
     font-weight: bold;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;    
@@ -59,7 +79,6 @@ button:hover {
 
 .popup-image:hover{
     transform: translateY(-5px);
-    /*box-shadow: 0 0 15px rgba(0, 0, 0, 0.37); */
 }
 
 .popup-images-column{
@@ -69,21 +88,14 @@ button:hover {
 
 }
 
-
 .popup-images-rows{
     display: flex;
     height: min-content;
-    
-    
-    
     width: 100%;
-    border: 3px solid red;
-
     justify-content: center;
     align-items: center;
    
 }
-
 
 .popup-image{
     max-width: 100%;
@@ -91,20 +103,12 @@ button:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
-
-
 }
 
-
-
-
 #logo-popup{
-
     display: block;
     margin-left: auto;
     margin-right: auto;
-
     height: 4em;
     width: auto;
 }
@@ -130,19 +134,6 @@ button:hover {
 /* below is the css for the download page as a whole, wich means the nav bar and the body.
  Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
 
-body{ 
-    
-    background-color: #19535F;
-    color: #93bff5;
-    
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;    
-    margin: 0;
-    padding: 0;
-
-    
-}
 
 nav {
     background-color: #3DC0C1;

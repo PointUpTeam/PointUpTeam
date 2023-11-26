@@ -4,23 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubHub</title>
+
+    <!-- Style files for page and nav bar -->
     <link href="landing.css" rel="stylesheet" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto Slab" rel="stylesheet">
+    <link href="navigation_files/nav.css" rel="stylesheet" type="text/css/"/>
+
+    <!-- Javascript link for nav bar -->
+    <script src="./navigation_files/nav.js"></script>
+
+    <style>
+
+button{
+    height: 3em;
+    background-color: #FFCB77;
+    border-style: solid;
+    border-color: #FFCB77;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+}
+
+
+button:hover {
+    background-color: #ffb338;
+    border-color: #ffb338;
+    font-weight: bolder;
+}
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+/* code for text content and modal box overall */
+
+.popup-content{
+    /* immma sitll need to tweak around these first fews settings so it looks right even when changing window saize and aspect ratio 
+    might use another flex */
+   
+    margin:  12.5% auto ;
+    padding: 20px;
+    border: 5px solid #3D0C11;
+    width: 70%; 
+    height: auto ;
+
+
+    border-style: solid;
+    border-radius: 10px;
+    background-color: #32a3ba;
+    color: black;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;    
+    position: relative;
+}
+
+
+#text{
+    text-align: center;
+}
+
+/* code for images */
+
+.popup-image:hover{
+    transform: translateY(-5px);
+}
+
+.popup-images-column{
+    flex: 50% ;
+    padding: 5px;
+}
+
+.popup-images-rows{
+    display: flex;
+    height: min-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.popup-image{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo-popup{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    width: auto;
+}
+
+
+/* code for close button */
+
+.popup-close {
+    color: #c6c2c2 ; 
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.popup-close:hover{
+    color: #8e8b8b ;
+}
+    </style>
+
 </head>
 
-<body style="background-color: #cfe9ed">
-    <!--Placing the App's Logo-->
-    <div id="logo-container">
-        <img src="./images/logo.png" alt="Logo of the SubHub app" id="logo-image">
-    </div>
-    <!--Making a row of hyperlinks to other pages-->
-    <div id="page-links">
+<body>
+    <header>
+        <div id="logo-container">
+            <img src="./images/logo.png" alt="Logo of the SubHub app" id="logo-image">
+        </div>
+    </header>
+
+    <nav id="page-links">
         <ul class="page-items">
             <li><a class="link-items" href="features.html">Features</a></li>
-            <li><a class="link-items" href="download.html">Download</a></li>
             <li><a class="link-items" href="about.html">About Us</a></li>
-            <li><a class="link-items" href="support.html">Support</a></li>
         </ul>
+    </nav>
+
+    <main>
+        <section id="intro">
+            <h1>Welcome to SubHub</h1>
+            <p>Efficient, Reliable, and User-Friendly Subletting at Your Fingertips.</p>
+        </section>
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Discover how SubHub can simplify your subletting experience.</p>
+            <!-- Add more descriptive content or images here -->
+        </section>
+        <h2>Key Features</h2>
+        <section id="features" style="display: inline-block; text-align: center; margin-right: 35px;">
+            <ul style="list-style: none;">
+                <li>Easy Listing and Searching</li>
+                <li>Secure Payment Gateway</li>
+                <li>User Reviews and Ratings</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </section>
+        <section id="testimonials">
+            <h2>User Testimonials</h2>
+            <p>Hear from our satisfied users and their successful subletting stories.</p>
+            <!-- Insert testimonials or user stories -->
+        </section>
+        <section id="cta">
+            <h2>Ready to Start Subletting?</h2>
+            <button id="downloadBtn"> Download SubHub Now! </button>
+        </section>
+    </main>
+
+
+    <!-- Download button -->
+
+    
+
+    <!-- Div container that shows the pop-up -->
+
+    <div id="Popup" class="popup">
+        <div class="popup-content">
+            <div id="CloseBtnPopup" class="popup-close">
+                <span &times;> X </span>
+            </div>  
+
+            <img id="logo-popup" src="images/logo.png" alt="SubHub Logo" >
+            <h2 id="text">Discover simplicity, security, and the perfect sublet with our feature-rich platform.</h2>
+            <p id="text">Available on App Store and Google play !</p>
+
+
+            <div class="popup-images-rows">
+                <div class="popup-images-column">
+                    <a  href="https://www.apple.com/app-store/"> 
+                        <img class="popup-image" id="apple" src="images/appstore_download.png" alt="Available on AppStore">
+                    </a>
+
+                </div>
+                <div class="popup-images-column">
+                    <a  href="https://play.google.com/">
+                        <img class="popup-image" id="playstore" src="images/googleplay_download.png" alt="Available on Google PLay Store">
+                    </a>
+
+                </div>
+
+            </div>
+                        
+        </div>
+
     </div>
+        
+
+
+    <footer>
+        <p>© 2023 SubHub, Inc.</p>
+    </footer>
 </body>
+
+
 </html>

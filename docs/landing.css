@@ -1,49 +1,60 @@
-p {
-    font-size: 80x;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #cfe9ed;
+    margin: 0;
+    padding: 0;
 }
 
-/* Code for the logo */
-#logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
+header {
+    background-color: #45b56e;
+    padding: 10px 0;
+    text-align: center;
 }
-
 
 #logo-image {
-    width: 450px;
-    height: 200px;
+    height: 60px;
 }
 
-/* Code for the list of pages below logo */
-
-/* Makes the containing div elements display as flex, and then centering them */
-#page-links {
-    display: flex;
-    justify-content: center;
+nav {
+    background-color: #444;
+    padding: 10px 0;
+    font-weight: bold;
 }
 
-/* Ensures that the entire list doesn't show any period symbols, and displays as flex */
 .page-items {
-    display: flex;
     list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Gives each list item a a margin of 10 to the right to sperate them */
-li {
-    margin: 0 10px;
+.page-items li {
+    display: inline;
+    margin-right: 20px;
 }
 
-/* Edits the text style of each list item */
 .link-items {
-    color: rgb(45, 45, 165);
-    font-size: 40px;
-    font-family: "Roboto Slab";
-    padding: 30px;
-    transition: color 0.7s;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.5s;
 }
 
 .link-items:hover {
-    color: #436436;
+    color: #D3F9B5;
+}
+
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 100%;
 }
