@@ -1,11 +1,12 @@
 /* Navigation Section! */
 
-nav {
+.navBar {
     padding: 10px 0;
     text-align: center;
+    background-color: #3DC0C1;
 }
 
-nav a {
+.navTitle {
     color: #FFFFFF;
     margin: 0 15px;
     text-decoration: none;
@@ -14,9 +15,16 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.navTitle:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+
     color: #D3F9B5;
 }
+
+
+
+/* css for download button shared with login button */
 
 button{
     background-color: #FFCB77;
@@ -37,6 +45,9 @@ button:hover {
 }
 
 
+
+/* code for text content and modal box overall */
+
 .popup {
     display: none;
     position: fixed;
@@ -51,8 +62,6 @@ button:hover {
     
     
 }
-
-/* code for text content and modal box overall */
 
 .popup-content{
     /* immma sitll need to tweak around these first fews settings so it looks right even when changing window saize and aspect ratio 
@@ -135,23 +144,3 @@ button:hover {
  Above is the css for the popup only wich means the button in the nav bar the modal box and it's content */
 
 
-nav {
-    background-color: #3DC0C1;
-    padding: 10px 0;
-    text-align: center;
-}
-
-
-.navTitle:hover{
-    text-decoration: underline;
-    font-weight: bolder;
-}
-
-nav a {
-    color: #FFFFFF;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-}
