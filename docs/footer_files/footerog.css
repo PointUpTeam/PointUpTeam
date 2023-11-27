@@ -86,6 +86,7 @@
 #sign-up-message {
     display: none;
     font-weight: bold;
+    color: rgb(115, 178, 241);
 }
 
 .social-links-container {
