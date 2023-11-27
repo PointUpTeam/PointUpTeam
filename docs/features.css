@@ -1,0 +1,102 @@
+/* css for the body etc */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #436436;
+    background-color: #3DC0C1;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.container { 
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #FFFFFF;
+    font-size: 3.0em;
+    margin-bottom: 0px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+h3 {
+    color: #3DC0C1;
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+
+/* css for each feature block */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.feature {
+    position: relative;
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 10px 0px 0px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+
+    /* nested flex row for allignement of the icon and text inside each feature block */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/*css for icons in features */
+
+.feature-icon {
+    width: 10%;
+}
+
+.feature-text{
+    width: 85%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .feature-icon{
+        all: unset;
+    }
+    
+
+    .feature-paragraph{
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .feature-icon {
+
+        width: 15%;
+        height: auto;
+    
+    }
+    
+    .feature-text{
+        width: 85%;
+    }
+    
+}

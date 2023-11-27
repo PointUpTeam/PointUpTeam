@@ -6,102 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SubHub</title>
 
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #436436;
-            background-color: #3DC0C1;
-            margin: 0;
-            padding: 0;
-            text-align: left;
-        }
-
-        .container {
-            max-width: 100%;
-            margin: 20px auto;
-            padding: 20px;
-        }
-
-        h1 {
-            color: #FFFFFF;
-            font-size: 3.0em;
-            margin-bottom: 0px;
-        }
-
-        p {
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
-
-        .feature {
-            flex: 1;
-            min-width: 1000px;
-            /* Adjusted minimum width */
-            background-color: #FFFFFF;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .feature:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-
-        h3 {
-            color: #3DC0C1;
-            margin-top: 0;
-            font-size: 1.5em;
-        }
-
-        .modal {
-            display: none;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            z-index: 1;
-        }
-
-        .modal-content {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 20px;
-            background-color: white;
-            border-radius: 5px;
-            width: 300px;
-            text-align: center;
-        }
-
-        .closeBtn {
-            position: absolute;
-            top: 0;
-            right: 0;
-            padding: 10px;
-            cursor: pointer;
-        }
-    </style>
+    <!-- No need for internal css, avoid unintentional priority conflict-->
+    <link href="features.css" rel="stylesheet" type="text/css">
 
     <!-- Style files for nav bar and footer -->
     <link href="./navigation_files/nav.css" rel="stylesheet" type="text/css"/>
     <link href="./footer_files/footerog.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Script files for nav bar and page -->
+    <!-- Script files for nav bar and page and footer -->
     <script src="./navigation_files/nav.js"></script>
     <script src="features.js"></script>
+    <script src="./footer_files/footer.js"></script>
 
     
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -110,10 +25,9 @@
 
 <body>
 
-
     <!-- Navigation Bar -->
 
-    <nav style="background-color: #3DC0C1;">
+    <nav class="navBar" style="background-color: #3DC0C1;">
 
         <!-- Listing elements of nav bar -->
 
@@ -175,31 +89,38 @@
 
             <!-- Individual Feature Block: Each 'feature' class represents a single feature of the platform, making it easy to apply consistent styling to each feature description. -->
             <div class="feature">
-                <h3>Security & Privacy</h3>
-                <p>Your data is secured with end-to-end encryption across everything you send. Not even we can access this data. SubHub collects essential user data only and users are able to see what information they are sharing and opt-out freely</p>
-            </div>
-
-            <div class="feature">
-                <h3>Precision Search</h3>
-                <p>Discover the perfect place to live with our powerful AI assisted search algorithms and custom filters</p>
-            </div>
-
-            <!-- For the Easter egg Pop up -->
-            <div class="modal" id="myModal">
-                <div class="modal-content">
-                    <span class="closeBtn" id="closeModalBtn">&times;</span>
-                    <p>You have Received a 10% Discount on our services :) </p>
+                <div class="feature-text">
+                    <h3>Security & Privacy</h3>
+                    <p class="feature-paragraph">Your data is secured with end-to-end encryption across everything you send. Not even we can access this data. SubHub collects essential user data only and users are able to see what information they are sharing and opt-out freely</p>
                 </div>
+                <img class="feature-icon" src="./images/icons/verified_user.svg">
             </div>
 
             <div class="feature">
-                <h3>In-App Messaging</h3>
-                <p>Get in touch with users all around the world using our messaging feature built right into the app</p>
+                <div class="feature-text">
+                    <h3>Precision Search</h3>
+                    <p class="feature-paragraph">Discover the perfect place to live with our powerful AI assisted search algorithms and custom filters</p>
+
+                </div>
+            
+                <img class="feature-icon" src="./images/icons/search.svg">
             </div>
 
             <div class="feature">
-                <h3>Easy Leasing</h3>
-                <p>SubHub makes leasing property simple, quick and worry-free</p>
+                <div class="feature-text">
+                    <h3>In-App Messaging</h3>
+                    <p class="feature-paragraph">Get in touch with users all around the world using our messaging feature built right into the app</p>
+
+                </div> 
+                <img class="feature-icon" src="./images/icons/sms.svg">
+            </div>
+
+            <div class="feature">
+                <div class="feature-text">
+                    <h3>Easy Leasing</h3>
+                    <p class="feature-paragraph">SubHub makes leasing property simple, quick and worry-free</p>
+                </div>
+                <img class="feature-icon" src="./images/icons/partner_exchange.svg">
             </div>
         </div>
     </div>
@@ -216,7 +137,6 @@
                             <h2>About Us</h2>
                             <a href="#">Customers</a>
                             <a href="#">Investors</a>
-                            <a href="#">Terms of Service</a>
                         </div>
                     </nav>
                     <nav role="navigation" aria-label="Contact us navigation">
@@ -224,7 +144,6 @@
                             <h2>Contact Us</h2>
                             <a href="#">Jobs</a>
                             <a href="#">Support</a>
-                            <a href="#">Contact</a>
                         </div>
                     </nav>
                     <nav role="navigation" aria-label="Follow us navigation">
@@ -241,8 +160,9 @@
                     </nav>
                     <div class="footer-email-form">
                         <h2>Join our newsletter</h2>
-                        <input type="email" placeholder="Enter your email address" id="footer-email">
-                        <input type="submit" value="Sign up" id="footer-email-btn">
+                        <input type="text" placeholder="Enter your email address" id="footer-email">
+                        <button id="footer-email-btn" onclick="signUp()">Sign Up!</button>
+                        <p id="sign-up-message">Thanks for signing up!</p>
                     </div>
                 </div>
             </div>

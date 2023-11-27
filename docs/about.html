@@ -10,8 +10,9 @@
     <link href="./navigation_files/nav.css" rel="stylesheet" type="text/css"/>
     <link href="./footer_files/footerog.css" rel="stylesheet" type="text/css"/>
 
-    <!-- Javascript link for nav bar -->
+    <!-- Javascript link for nav bar and footer -->
     <script src="./navigation_files/nav.js"></script>
+    <script src="./footer_files/footer.js"></script>
 
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
@@ -75,7 +76,7 @@
     <!-- Main content of page -->
 
     <h1 style="padding: 10px;">About Us</h2>
-    <p style="padding: 10px;">Welcome to SubHub, your trusted platform for subletting apartments, houses, and rooms. We make the process of renting out your space or finding a place to stay simple and secure. Meet our dedicated team who makes it all happen:</p>
+    <p style="padding: 10px;">Welcome to SubHub, your trusted platform for subletting apartments, houses, and rooms. We make the process of renting out your space or finding a place to stay simple and secure. Meet our dedicated team who makes it all happen!</p>
 
     <div class="members-list">
         <!-- Nuha -->
@@ -89,7 +90,7 @@
             <div class="member-writeup">
                 <h2>Nuha Aburamadan</h2>
                 <p>ID: 300361886</p>
-                <P>This is an interesting person! Come back here when we have more to talk about...</P>
+                <P>Good evening, or morning, or afternoon! I'm Nuha, and I'm a Software Engineering student at the Univeristy of Ottawa. I plan to make it into development of AI and embedded systems, and hope to meet many amazing people. Drawing and design is one my passions that inspire me to be creative everyday. Follow me on Github to see what I'm doing!</P>
                 <a href="https://github.com/05nuha" style="font-size: 20px;">GitHub</a>
             </div>
 
@@ -222,7 +223,6 @@
                         <h2>About Us</h2>
                         <a href="#">Customers</a>
                         <a href="#">Investors</a>
-                        <a href="#">Terms of Service</a>
                     </div>
                 </nav>
                 <nav role="navigation" aria-label="Contact us navigation">
@@ -230,7 +230,6 @@
                         <h2>Contact Us</h2>
                         <a href="#">Jobs</a>
                         <a href="#">Support</a>
-                        <a href="#">Contact</a>
                     </div>
                 </nav>
                 <nav role="navigation" aria-label="Follow us navigation">
@@ -247,8 +246,9 @@
                 </nav>
                 <div class="footer-email-form">
                     <h2>Join our newsletter</h2>
-                    <input type="email" placeholder="Enter your email address" id="footer-email">
-                    <input type="submit" value="Sign up" id="footer-email-btn">
+                    <input type="text" placeholder="Enter your email address" id="footer-email">
+                    <button id="footer-email-btn" onclick="signUp()">Sign Up!</button>
+                    <p id="sign-up-message">Thanks for signing up!</p>
                 </div>
             </div>
         </div>

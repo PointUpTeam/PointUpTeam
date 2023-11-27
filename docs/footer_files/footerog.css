@@ -21,7 +21,7 @@
 
 .footer-heading h2 {
     color: #FFCB77;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .footer-heading a {
@@ -81,6 +81,12 @@
     cursor: pointer;
     background-color: #703443;
     transition: all 0.4s ease-out;
+}
+
+#sign-up-message {
+    display: none;
+    font-weight: bold;
+    color: rgb(115, 178, 241);
 }
 
 .social-links-container {
